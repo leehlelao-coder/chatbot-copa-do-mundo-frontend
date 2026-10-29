@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#087443">
+  <title>Chatbot Copa do Mundo | Central do Futebol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stadium-glow"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Central do Futebol">
+      <span class="brand-ball">⚽</span>
+      <span><strong>CENTRAL DO FUTEBOL</strong><small>ESPECIAL COPA DO MUNDO</small></span>
+    </a>
+    <span class="live"><i></i> IA ONLINE</span>
+  </header>
+
+  <main class="layout">
+    <section class="hero">
+      <div class="eyebrow"><span>FIFA WORLD CUP</span><span class="line"></span><span>1930 — HOJE</span></div>
+      <h1>Toda a história.<br><em>Um só lugar.</em></h1>
+      <p>Dos primeiros campeões aos recordes históricos: pergunte ao seu especialista em Copas do Mundo.</p>
+      <div class="stats">
+        <div><strong>⚽</strong><span>História</span></div>
+        <div><strong>🏆</strong><span>Campeões</span></div>
+        <div><strong>🌎</strong><span>Seleções</span></div>
+      </div>
+    </section>
+
+    <section class="chat-card" aria-label="Chatbot Copa do Mundo">
+      <div class="chat-head">
+        <div class="avatar">🏆</div>
+        <div><strong>Especialista da Copa</strong><small><span class="status-dot"></span> Pronto para o jogo</small></div>
+        <button id="clear-chat" class="icon-button" title="Limpar conversa" aria-label="Limpar conversa">↻</button>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="message bot">
+          <div class="bubble">
+            <span class="bubble-label">CENTRAL DO FUTEBOL</span>
+            Olá, torcedor! ⚽🏆<br><br>
+            Sou seu especialista em Copas do Mundo. Pode perguntar sobre campeões, finais históricas, seleções, craques e recordes. A bola está com você!
+          </div>
+          <time>AGORA</time>
+        </div>
+      </div>
+
+      <div class="suggestions">
+        <span>PERGUNTAS RÁPIDAS</span>
+        <div class="chips">
+          <button data-question="Quantas Copas do Mundo o Brasil ganhou?">🇧🇷 Títulos do Brasil</button>
+          <button data-question="Quem foi o artilheiro da Copa de 2022?">🥇 Artilheiros</button>
+          <button data-question="Qual foi a final mais marcante da história?">🏟️ Finais históricas</button>
+        </div>
+      </div>
+
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="user-input">Sua pergunta sobre a Copa</label>
+        <input id="user-input" type="text" maxlength="1000" placeholder="Pergunte sobre a Copa do Mundo..." autocomplete="off" required>
+        <button id="send-button" type="submit" aria-label="Enviar pergunta"><span>ENVIAR</span> <b>➤</b></button>
+      </form>
+      <p class="disclaimer">Respostas geradas por IA. Confira dados importantes em fontes oficiais.</p>
+    </section>
+  </main>
+  <footer>FEITO PARA QUEM VIVE O FUTEBOL <span>◆</span> PROJETO NINJA</footer>
+  <script src="script.js"></script>
+</body>
+</html>
